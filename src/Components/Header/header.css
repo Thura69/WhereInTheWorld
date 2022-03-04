@@ -1,0 +1,19 @@
+.header{
+    height:var( --header-height);
+    position: fixed;
+    left: 0;top:0;right:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 var(  --header-lr-p);
+    box-shadow:var( --box-shadow);
+    background-color: var( --header-color);
+    color:var( --text-color);
+    z-index: 10;
+}
+.darkMode{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}

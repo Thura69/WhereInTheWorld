@@ -1,0 +1,96 @@
+.info{
+    margin-top: calc(var( --header-height) + 1rem );
+}
+.info__container{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+.search__box{
+    background-color:  var(--card--color);
+    padding:1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: var(  --box-shadow);
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+.search__box input{
+    border:none;
+    outline: non;
+    background-color:  var( --card--color);
+    color:var(--text-color)
+}
+.search__box input:focus{
+    outline: none;
+}
+.eye{
+    color:gray;
+    font-size: 1.5rem;
+    display: none;
+}
+.filter__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:250px;
+    padding:.7rem;
+    border-radius: 0.5rem;
+    box-shadow: var(  --box-shadow);
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background-color:  var( --card--color);
+    color:var(--text-color)
+}
+.filter__item{
+    position: absolute;
+    left:0;
+    top:110%;
+    width: 250px;
+    box-shadow: var( --card--color);
+    display: none;
+    user-select: none;
+    background-color: var( --card--color);
+    color:var(--text-color)
+}
+.filter__item.active{
+    display: initial;
+}
+.filter{
+    position: relative;
+}
+ul{
+    padding:1rem;
+    line-height:2rem;
+}
+.search__button{
+    border:none;
+    cursor: pointer;
+    background-color:  var(--card--color);
+    color:var(--text-color)
+}
+.search__button:hover{
+    color:purple;
+}
+
+
+
+
+
+
+@media (min-width: 768px) { 
+  
+  .info__container{
+  flex-direction: row;
+   flex-wrap: wrap;
+  align-items: center;
+  }
+}
+@media (min-width:450px) {  
+    .search__box{
+        font-size: 1rem;
+    }
+}

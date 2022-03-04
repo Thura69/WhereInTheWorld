@@ -1,0 +1,18 @@
+.card{
+    padding:1rem;
+    border-radius: 0.5rem;
+    box-shadow: var( --box-shadow);
+    margin:2rem 0;
+    background-color:  var( --card--color);
+    color:var(--text-color)
+}
+.card__title{
+    margin:1rem 0;
+}
+.card__content{
+    line-height:1.5rem;
+}
+span{
+    font-weight:500;
+    margin-right: .2rem;
+}
